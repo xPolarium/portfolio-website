@@ -39,6 +39,7 @@ module.exports = {
 		},
 		colors: {
 			"dark-grey": "#222831",
+			"mid-grey": "#2d2e32",
 			"light-grey": "#393E46",
 			"bright-orange": "#D65A31",
 			"light-white": "#EEEEEE",
@@ -46,7 +47,7 @@ module.exports = {
 
 		fontFamily: {
 			header: ["Poppins", "system-ui", "sans-serif"],
-			body: ["Mullish", "system-ui", "sans-serif"],
+			body: ["Mulish", "system-ui", "sans-serif"],
 		},
 	},
 	plugins: [],

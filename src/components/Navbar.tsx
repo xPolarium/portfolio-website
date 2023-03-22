@@ -43,15 +43,15 @@ const Navbar = () => {
 						<li className="hover:opacity-60">
 							<a href="#">Contact</a>
 						</li>
-						<li className="hover:opacity-60">
+						<li className="hover:opacity-60 outline-bright-orange text-bright-orange dark:text-dark-grey">
 							<a
-								className="px-6 py-2 rounded-full outline outline-2 dark:outline-none dark:bg-light-grey text-white"
+								className="px-6 py-2 rounded-full outline outline-2 dark:outline-none dark:bg-bright-orange"
 								href="#"
 							>
 								Blog
 							</a>
 						</li>
-						<li className="flex rounded-full p-1 outline outline-2 dark:outline-none bg-neutral-400 dark:bg-light-grey text-white hover:opacity-60">
+						<li className="flex rounded-full p-1 outline outline-2 outline-bright-orange text-bright-orange dark:outline-none bg-neutral-400 dark:bg-bright-orange dark:text-dark-grey text-white hover:opacity-60">
 							<button onClick={() => toggleDarkMode()}>
 								<RiMoonClearFill className="cursor-pointer text-2xl hidden dark:block" />
 
@@ -62,7 +62,7 @@ const Navbar = () => {
 
 					<button
 						onClick={() => setMenuOpen(!menuOpen)}
-						className="py-0.5 px-1 bg-bright-orange rounded shadow sm:hidden hover:bg-opacity-60"
+						className="py-0.5 px-1 bg-bright-orange text-light-white rounded shadow sm:hidden hover:bg-opacity-60"
 					>
 						<CgMenu className="text-3xl"></CgMenu>
 					</button>

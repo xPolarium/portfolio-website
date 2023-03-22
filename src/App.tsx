@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 
 function App() {
 	return (
-		<div className="dark:bg-dark-grey dark:text-light-white">
+		<div className="text-mid-grey dark:bg-dark-grey dark:text-light-white bg-light-white">
 			<Navbar />
 			<HeroCard />
 			<About />
