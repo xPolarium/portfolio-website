@@ -30,7 +30,7 @@ module.exports = {
 			},
 
 			backgroundImage: {
-				"miguel-selfie": "url('/myself.jpg')",
+				"miguel-selfie": "url('/self-removed-bg.png')",
 			},
 
 			borderRadius: {

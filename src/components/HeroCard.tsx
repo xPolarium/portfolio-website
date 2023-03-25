@@ -3,7 +3,7 @@ import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
 const HeroCard = () => {
 	return (
 		<div className="min-h-screen">
-			<div className="container mx-auto mt-40">
+			<div className="container mx-auto mt-72">
 				<div className="flex sm:flex-col-reverse lg:flex-row sm:items-center justify-center gap-8 lg:gap-16 xl:gap-32">
 					<div className="flex flex-col gap-4 font-body font-medium">
 						<div className="font-body text-xl italic lg:text-2xl">
@@ -18,24 +18,24 @@ const HeroCard = () => {
 						</div>
 						<div className="flex gap-4 self-center text-xl">
 							<a href="">
-								<BsLinkedin size="1.3rem" />
+								<BsLinkedin size="1.7rem" />
 							</a>
 							<a href="">
-								<BsGithub size="1.3rem" />
+								<BsGithub size="1.7rem" />
 							</a>
 							<a href="">
-								<BsTwitter size="1.3rem" />
+								<BsTwitter size="1.7rem" />
 							</a>
 						</div>
 						<div className="self-center">
-							<button className="bg-bright-orange px-6 py-1 rounded-full text-light-white">
-								see my work
+							<button className="bg-bright-orange px-6 py-2 rounded-full text-light-white mt-4">
+								See my work
 							</button>
 						</div>
 					</div>
 
 					<div className="hidden sm:block">
-						<div className="w-64 h-64 bg-cover bg-miguel-selfie bg-center rounded-blob-default overflow-hidden animate-blob"></div>
+						<div className="w-96 h-96 bg-cover bg-miguel-selfie bg-center rounded-blob-default overflow-hidden animate-blob bg-light-grey"></div>
 					</div>
 				</div>
 			</div>
