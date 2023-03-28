@@ -3,7 +3,7 @@ import { BsDiscord } from "react-icons/bs";
 
 const Contact = () => {
 	return (
-		<div className="mt-60">
+		<section id="contact" className="mt-60 px-4">
 			<div className="container mx-auto max-w-5xl font-body">
 				<div
 					id="portfolio"
@@ -11,7 +11,7 @@ const Contact = () => {
 				>
 					Contact
 				</div>
-				<div className="flex gap-16">
+				<div className="flex gap-16 flex-wrap">
 					<div className="flex items-center gap-4">
 						<div className="rounded-full bg-light-white shadow-md p-4 flex justify-center items-center">
 							<GoMailRead
@@ -53,7 +53,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

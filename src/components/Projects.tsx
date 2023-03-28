@@ -2,17 +2,21 @@ import { BsGithub } from "react-icons/bs";
 
 const ProjectCard = () => {
 	return (
-		<div className="flex p-6 gap-6 dark:bg-light-grey rounded-2xl">
+		<section
+			id="projects"
+			className="flex p-6 gap-6 dark:bg-light-grey rounded-2xl flex-col lg:flex-row"
+		>
 			<a
 				href="/"
-				className="rounded-2xl overflow-hidden h-auto w-[53rem]"
+				className="rounded-2xl overflow-hidden h-auto lg:w-[53rem]"
 			>
 				<img
 					src="/portfolio-image.png"
 					alt="my old portfolio project"
+					className="hover:blur-sm"
 				/>
 			</a>
-			<div className="flex flex-col items-center justify-around gap-4 w-[40rem]">
+			<div className="flex flex-col items-center justify-around gap-4 lg:w-[40rem]">
 				<h3 className="text-3xl font-header font-bold dark:text-light-white">
 					Old Portfolio Site
 				</h3>
@@ -24,7 +28,7 @@ const ProjectCard = () => {
 					mollitia?
 				</p>
 				<div>
-					<a href="/" className="flex items-center">
+					<a href="/" className="flex items-center hover:opacity-60">
 						<p className="mr-2 font-header font-semibold text-xl">
 							Code
 						</p>
@@ -32,19 +36,19 @@ const ProjectCard = () => {
 					</a>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
 const Projects = () => {
 	return (
-		<div className="my-60">
-			<div className="container mx-auto max-w-5xl font-body">
+		<div className="mb-60">
+			<div className="container mx-auto max-w-5xl font-body px-4">
 				<div
 					id="portfolio"
 					className="text-2xl font-header font-semibold text-bright-orange mb-16"
 				>
-					Portfolio
+					Projects
 				</div>
 				<div className="flex flex-col gap-10">
 					<ProjectCard />

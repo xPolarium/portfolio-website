@@ -2,7 +2,7 @@ import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
 
 const HeroCard = () => {
 	return (
-		<div className="min-h-screen">
+		<section className="min-h-screen">
 			<div className="container mx-auto mt-72">
 				<div className="flex sm:flex-col-reverse lg:flex-row sm:items-center justify-center gap-8 lg:gap-16 xl:gap-32">
 					<div className="flex flex-col gap-4 font-body font-medium">
@@ -17,18 +17,27 @@ const HeroCard = () => {
 							Software Engineer &&nbsp;Web Developer
 						</div>
 						<div className="flex gap-4 self-center text-xl">
-							<a href="">
+							<a
+								href="https://www.linkedin.com/in/mtorres1998"
+								className="hover:opacity-60"
+							>
 								<BsLinkedin size="1.7rem" />
 							</a>
-							<a href="">
+							<a
+								href="https://www.github.com/xpolarium"
+								className="hover:opacity-60"
+							>
 								<BsGithub size="1.7rem" />
 							</a>
-							<a href="">
+							<a
+								href="https://twitter.com/polarium_"
+								className="hover:opacity-60"
+							>
 								<BsTwitter size="1.7rem" />
 							</a>
 						</div>
 						<div className="self-center">
-							<button className="bg-bright-orange px-6 py-2 rounded-full text-light-white mt-4">
+							<button className="bg-bright-orange px-6 py-2 rounded-full text-light-white mt-4 font-semibold font-header">
 								See my work
 							</button>
 						</div>
@@ -39,7 +48,7 @@ const HeroCard = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

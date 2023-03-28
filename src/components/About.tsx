@@ -1,8 +1,8 @@
 const About = () => {
 	return (
-		<div className="pb-60">
+		<section id="about" className="mb-60">
 			<div className="font-body container mx-auto max-w-5xl">
-				<div className="flex items-center gap-16">
+				<div className="flex flex-col lg:flex-row items-center gap-16 px-4">
 					<img
 						src="/self-removed-bg.png"
 						alt="me"
@@ -28,7 +28,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
