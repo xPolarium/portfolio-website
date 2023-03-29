@@ -1,28 +1,28 @@
 const Skills = () => {
 	const languages = [
-		["TypeScript", "/ts-logo.svg"],
-		["Python", "/python-logo.svg"],
-		["C++", "/cplus-logo.svg"],
-		["C#", "/csharp-logo.svg"],
-		["Rust", "/rust-logo.svg"],
-		["JavaScript", "/js-logo.svg"],
+		["TypeScript", "/logos/ts-logo.svg"],
+		["Python", "/logos/python-logo.svg"],
+		["C++", "/logos/cplus-logo.svg"],
+		["C#", "/logos/csharp-logo.svg"],
+		["Rust", "/logos/rust-logo.svg"],
+		["JavaScript", "/logos/js-logo.svg"],
 	];
 
 	const technology = [
-		["HTML", "/html-logo.svg"],
-		["CSS", "/css-logo.svg"],
-		["React", "/react-logo.svg"],
-		["NextJS", "/nextjs-logo.svg"],
-		["Github", "/github-logo.svg"],
-		["Tailwind", "/tailwind-logo.svg"],
-		["AWS", "/aws-logo.svg"],
-		["Linux", "/linux-logo.svg"],
+		["HTML", "/logos/html-logo.svg"],
+		["CSS", "/logos/css-logo.svg"],
+		["React", "/logos/react-logo.svg"],
+		["NextJS", "/logos/nextjs-logo.svg"],
+		["Github", "/logos/github-logo.svg"],
+		["Tailwind", "/logos/tailwind-logo.svg"],
+		["AWS", "/logos/aws-logo.svg"],
+		["Linux", "/logos/linux-logo.svg"],
 	];
 
 	const databases = [
-		["MongoDB", "/mongodb-logo.svg"],
-		["Firebase", "/firebase-logo.svg"],
-		["PostgreSQL", "/postgresql-logo.svg"],
+		["MongoDB", "/logos/mongodb-logo.svg"],
+		["Firebase", "/logos/firebase-logo.svg"],
+		["PostgreSQL", "/logos/postgresql-logo.svg"],
 	];
 
 	return (

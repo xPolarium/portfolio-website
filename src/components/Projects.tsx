@@ -1,32 +1,33 @@
 import { BsGithub } from "react-icons/bs";
 
-const ProjectCard = () => {
+type Project = {
+	title: string;
+	description: string;
+	image: string;
+	link: string;
+};
+
+const ProjectCard = ({ title, description, image, link }: Project) => {
 	return (
 		<section
 			id="projects"
 			className="flex p-6 gap-6 dark:bg-light-grey rounded-2xl flex-col lg:flex-row"
 		>
 			<a
-				href="/"
-				className="rounded-2xl overflow-hidden h-auto lg:w-[53rem]"
+				href={link}
+				className="rounded-2xl overflow-hidden h-full lg:w-[53rem]"
 			>
 				<img
-					src="/portfolio-image.png"
+					src={image}
 					alt="my old portfolio project"
 					className="hover:blur-sm"
 				/>
 			</a>
 			<div className="flex flex-col items-center justify-around gap-4 lg:w-[40rem]">
 				<h3 className="text-3xl font-header font-bold dark:text-light-white">
-					Old Portfolio Site
+					{title}
 				</h3>
-				<p className="text-center text-lg">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Assumenda, maxime itaque optio magni, dolore sed
-					consequuntur autem quas, aliquam blanditiis aspernatur dicta
-					ad? Amet debitis architecto, autem voluptatibus assumenda
-					mollitia?
-				</p>
+				<p className="text-center text-md">{description}</p>
 				<div>
 					<a href="/" className="flex items-center hover:opacity-60">
 						<p className="mr-2 font-header font-semibold text-xl">
@@ -41,6 +42,16 @@ const ProjectCard = () => {
 };
 
 const Projects = () => {
+	const projects = [
+		{
+			title: "This portfolio website",
+			description:
+				"I built this website to showcase my resume and my ability to deploy a front/backend in general. I've also included a blog where I share software related things that I've learned. The site is hosted using AWS services, and the frontend was primarily built with TypeScript and React with libraries such as Tailwind for the design.",
+			link: "",
+			image: "/project-portfolio-website.png",
+		},
+	];
+
 	return (
 		<div className="mb-60">
 			<div className="container mx-auto max-w-5xl font-body px-4">
@@ -51,9 +62,9 @@ const Projects = () => {
 					Projects
 				</div>
 				<div className="flex flex-col gap-10">
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
+					{projects.map((proj) => (
+						<ProjectCard {...proj}></ProjectCard>
+					))}
 				</div>
 			</div>
 		</div>

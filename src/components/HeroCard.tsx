@@ -13,7 +13,7 @@ const HeroCard = () => {
 							Miguel A. Torres
 						</div>
 
-						<div className="flex flex-col font-header sm:flex-row font-semibold text-xl lg:text-2xl xl:text-3xl self-center text-center">
+						<div className="flex fl ex-col font-header sm:flex-row font-semibold text-xl lg:text-2xl xl:text-3xl self-center text-center">
 							Software Engineer &&nbsp;Web Developer
 						</div>
 						<div className="flex gap-4 self-center text-xl">
