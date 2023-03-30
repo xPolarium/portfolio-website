@@ -9,10 +9,7 @@ type Project = {
 
 const ProjectCard = ({ title, description, image, link }: Project) => {
 	return (
-		<section
-			id="projects"
-			className="flex p-6 gap-6 dark:bg-light-grey rounded-2xl flex-col lg:flex-row"
-		>
+		<div className="flex p-6 gap-6 dark:bg-light-grey rounded-2xl flex-col lg:flex-row">
 			<a
 				href={link}
 				className="rounded-2xl overflow-hidden h-full lg:w-[53rem]"
@@ -41,7 +38,7 @@ const ProjectCard = ({ title, description, image, link }: Project) => {
 					</a>
 				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 
@@ -57,7 +54,7 @@ const Projects = () => {
 	];
 
 	return (
-		<div className="mb-60">
+		<section id="projects" className="mb-60">
 			<div className="container mx-auto max-w-5xl font-body px-4">
 				<div
 					id="portfolio"
@@ -71,7 +68,7 @@ const Projects = () => {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 
