@@ -53,3 +53,6 @@ jobs:
 
             - name: Deploy static site to S3 bucket
               run: aws s3 sync ./dist s3://mtorres-portfolio-website --delete
+
+            - name: Invalidate Cloudfront Distribution
+              run: aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
