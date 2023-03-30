@@ -29,7 +29,11 @@ const ProjectCard = ({ title, description, image, link }: Project) => {
 				</h3>
 				<p className="text-center text-md">{description}</p>
 				<div>
-					<a href="/" className="flex items-center hover:opacity-60">
+					<a
+						href={link}
+						target="_blank"
+						className="flex items-center hover:opacity-60"
+					>
 						<p className="mr-2 font-header font-semibold text-xl">
 							Code
 						</p>
@@ -47,7 +51,7 @@ const Projects = () => {
 			title: "This portfolio website",
 			description:
 				"I built this website to showcase my resume and my ability to deploy a front/backend in general. I've also included a blog where I share software related things that I've learned. The site is hosted using AWS services, and the frontend was primarily built with TypeScript and React with libraries such as Tailwind for the design.",
-			link: "",
+			link: "https://github.com/xPolarium/portfolio-website",
 			image: "/project-portfolio-website.png",
 		},
 	];
